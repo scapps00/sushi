@@ -1,0 +1,61 @@
+body {
+	background-color: #FF5733;
+}
+
+h1 {
+	color: yellow;
+	font-family: 'Barrio', cursive;
+	font-size: 75px;
+	text-align: center;
+}
+
+h2 {
+	color: yellow;
+	font-family: 'Barrio', cursive;
+	font-size: 50px;
+	text-align: center;
+}
+
+h3 {
+	color: yellow;
+	font-family: 'Barrio', cursive;
+	font-size: 35px;
+	text-align: center;
+}
+
+img {
+	width: 300px;
+	margin: auto;
+	display: block;
+}
+
+th {
+	width: 800px;
+	vertical-align: top;
+}
+
+table {
+	margin: auto;
+	display: block;
+}
+
+#addSushi {
+	color: yellow;
+	font-family: 'Barrio', cursive;
+	font-size: 35px;
+	text-align: center;
+}
+
+input {
+	font-family: 'Barrio', cursive;
+	font-size: 35px;
+	width: 600px;
+	text-align: center;
+}
+
+button {
+	font-family: 'Barrio', cursive;
+	font-size: 20px;
+	background-color: yellow;
+	color: #FF5733;
+}

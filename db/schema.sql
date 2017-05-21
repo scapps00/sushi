@@ -1,0 +1,11 @@
+CREATE DATABASE sushi_db;
+
+USE sushi_db;
+
+CREATE TABLE sushi (
+	id INTEGER(10) AUTO_INCREMENT NOT NULL,
+	sushi_name VARCHAR(100) NOT NULL,
+	devoured BOOLEAN NOT NULL,
+	date TIMESTAMP NOT NULL,
+	PRIMARY KEY (id)
+);

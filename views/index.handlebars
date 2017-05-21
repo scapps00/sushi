@@ -1,0 +1,38 @@
+<table>
+	<tr>
+		<th>
+			<h2>Sushi on Your Plate</h2>
+			{{#each sushi }}
+			{{#unless this.devoured}}
+			<h3>
+			{{this.sushi_name}}
+				<form action="/{{this.id}}?_method=PUT" method="POST">
+					<input type="hidden" name="devoured" value="true">
+					<button type="submit">EAT ME!</button>
+				</form>
+			</h3>
+			{{/unless}}
+			{{/each}}
+		</th>
+		<th>
+			<h2>Sushi You Have Eaten</h2>
+			{{#each sushi }}
+			{{#if this.devoured}}
+			<h3>
+			{{this.sushi_name}}
+			</h3>
+			{{/if}}
+			{{/each}}
+		</th>
+	</tr>
+</table>
+<div id="addSushi">
+<br>
+New Sushi!
+<br>
+<form action="/" method="POST">
+	<input type="text" name="sushi_name">
+	<br>
+	<button id="submit">Submit!</button>
+</form>
+</div>
